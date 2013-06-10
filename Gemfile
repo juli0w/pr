@@ -7,15 +7,7 @@ gem 'carrierwave'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'activeadmin'
-
-group :development do
-  gem 'mysql2'
-end
-
-group :production do
-  gem 'pg'
-  gem 'unicorn'
-end
+gem 'mysql2'
 
 gem 'activeadmin'
 gem 'sass-rails',   '~> 3.2.3'
@@ -43,7 +35,7 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+# gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
