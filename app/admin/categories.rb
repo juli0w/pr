@@ -2,6 +2,7 @@ ActiveAdmin.register Category do
   index do
     column :name
     column :internal
+    column :line
     default_actions
   end
 
@@ -11,6 +12,7 @@ ActiveAdmin.register Category do
   show do |category|
     attributes_table do
       row :name
+      row :line
       row :internal
       row :image do
         image_tag(category.image)
@@ -21,6 +23,7 @@ ActiveAdmin.register Category do
   form do |f|
     f.inputs "Dados" do
       f.input :name
+      f.input :line
       f.input :internal
       f.input :image
     end
