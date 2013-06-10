@@ -1,0 +1,33 @@
+<section class="container main">
+
+  <% @banners.each do |banner| %>
+    <div class="row">
+      <div class="banner">
+        <%= image_tag banner.image, width: "100%", height: "280px" %>
+      </div>
+    </div>
+  <% end %>
+
+  <br style="clearfix" />
+
+  <div class="row title linha-de-produtos center">
+    <span class="centered">
+      Escolha a linha de produtos
+    </span>
+  </div>
+  <div class="row border-top">
+
+    <% @lines.each do |line| %>
+      <a href="<%= line_path(line) %>">
+        <div class="four columns alpha omega l1 foured">
+          <div class="linha-title center">
+            <span class="centered"><%= line.name %></span>
+          </div>
+          <img src="<%= line.image %>" style="width:100%; height: 200px" />
+        </div>
+      </a>
+    <% end %>
+
+  </div>
+
+</section>

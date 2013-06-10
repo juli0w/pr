@@ -1,0 +1,51 @@
+<section class="container products">
+  <div class="row linhas">
+    <div class="description left">
+      <h2><%= @category.line.name %></h2>
+      <h3><%= @category.line.title %></h3>
+      <p><%= @category.line.description %></p>
+    </div>
+
+    <span class="img right" 
+          style="background: url('<%= @category.line.image %>')
+                    no-repeat
+                    center
+                    right;
+                 display: block;">
+      <div style="display: block;" class="img linha-left"></div>
+    </span>
+  </div>
+
+  <div class="row">
+    <div class="eigth columns alpha omega l2 twored">
+      <div class="linha-title title-style-1 center">
+        <span class="centered"><%= @category.internal ? "Interno" : "Externo" %></span>
+      </div>
+
+      <div class='category'>
+        <span class="categories" 
+            style="background: url('<%= @category.image %>')
+                      no-repeat
+                      center
+                      right;
+                   display: block;"> 
+          <%= link_to @category.name, "#", class: "categories linha-left" %>
+        </span>
+      </div>
+
+      <% @category.products.each do |product| %>
+
+        <div class="product" data-id="<%= product.id %>">
+          <%= link_to product.name, product, remote: true %>
+        </div>
+        
+      <% end %>
+
+    </div>
+
+    <div class="eight columns alpha omega twored">
+      <div id="product-show">
+        
+      </div>
+    </div>
+</div>

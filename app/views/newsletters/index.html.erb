@@ -1,0 +1,35 @@
+<section class="container newsletter">
+
+  <% @newsletters.each do |newsletter| %>
+
+    <div class="newsletter">
+    
+      <div class="row linhas">
+        <div class="description left" <%= "style='width: auto !important;'".html_safe if newsletter.image.blank? %>>
+          <h2><%= link_to newsletter.title, newsletter %></h2>
+          <h3><%= newsletter.published_at %></h3>
+          <p><%= newsletter.content %></p>
+        </div>
+
+        <% unless newsletter.image.blank? %>
+          <span class="img left" 
+                style="background: url('<%= newsletter.image %>')
+                          no-repeat
+                          center;
+                       display: block;">
+            <div style="display: block;" class="img newsletter-fade"></div>
+          </span>
+        <% end %>
+      </div>
+    
+    </div>
+
+  <% end %>
+
+  <div class="custom-paginate">
+    <%= paginate(@newsletters) %>
+  </div>
+  
+  <br />
+
+</section>

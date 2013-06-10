@@ -1,0 +1,64 @@
+<section class="container products">
+  <div class="row linhas">
+    <div class="description left">
+      <h2><%= @line.name %></h2>
+      <h3><%= @line.title %></h3>
+      <p><%= @line.description %></p>
+    </div>
+
+    <span class="img right" 
+          style="background: url('<%= @line.image %>')
+                    no-repeat
+                    center
+                    right;
+                 display: block;">
+      <div style="display: block;" class="img linha-left"></div>
+    </span>
+  </div>
+
+  <div class="row">
+    <div class="eigth columns alpha omega l2 twored">
+      <div class="linha-title title-style-1 center">
+        <span class="centered">INTERNO</span>
+      </div>
+
+      <% @categories.internals.each do |category| %>
+
+        <div class='category'>
+          <span class="categories" 
+              style="background: url('<%= category.image %>')
+                        no-repeat
+                        center
+                        right;
+                     display: block;"> 
+
+            <%= link_to category.name, category, class: "categories linha-left" %>
+          </span>
+        </div>
+        
+      <% end %>
+
+    </div>
+
+    <div class="eight columns alpha omega twored">
+      <div class="linha-title title-style-1 center">
+        <span class="centered">EXTERNO</span>
+      </div>
+
+      <% @categories.externals.each do |category| %>
+      
+        <div class='category'>
+          <span class="categories" 
+              style="background: url('<%= category.image %>')
+                        no-repeat
+                        center
+                        right;
+                     display: block;"> 
+            <%= link_to category.name, category, class: "categories linha-left" %>
+          </span>
+        </div>
+        
+      <% end %>
+
+    </div>
+</div>

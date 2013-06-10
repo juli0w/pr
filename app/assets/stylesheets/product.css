@@ -1,0 +1,46 @@
+.product {
+  display: block;
+  float: left;
+  width: 236px;
+  width: 236.5px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.product a {
+  text-align: center;
+  background-color: #D0C5B1;
+  display: block;
+  width: 100%;
+  line-height: 26px;
+}
+
+.product a:hover {
+  color: inherit;
+  background-color: #e7d7b6;
+}
+
+.description {
+  text-align: justify;
+  padding: 10px 20px 0 20px;
+}
+
+.product-addon {
+  display: block;
+  float: left;
+  margin-right: 3px;
+}
+
+.product-image {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.image-description {
+  display: block;
+  text-align: center;
+  width: 155px;
+  padding: 2px 0;
+  background-color: #e7d7b6;
+  margin-bottom: 6px;
+}

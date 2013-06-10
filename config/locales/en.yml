@@ -1,0 +1,11 @@
+# encoding: UTF-8
+en:
+  hello: "Hello world"
+  views:
+    pagination:
+      previous: "&lt;"
+      next: "&gt;"
+      truncate: "..."
+      last: ">>"
+      first: "<<"
+

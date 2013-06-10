@@ -1,0 +1,46 @@
+<section class="container contato">
+
+  <div class="row" style="padding-top: 30px">
+
+    <p>Se você tem alguma dúvida, sugestão ou quiser saber um pouco mais sobre quem somos e o que fazemos, entre em contato conosco pelo formulário abaixo.</p>
+    <p><span style="color: #A58747">*</span> Informações sinalizadas com asterisco (*) são obrigatórias</p>
+
+    <%= form_for @message, :url => contact_path do |form| %>
+      <fieldset class="fields" style="padding-bottom: 0; margin-bottom: 0;">
+        <div class="field">
+          <%= form.text_field :name, placeholder: "Nome *" %>
+        </div>
+        
+        <div class="field" style="margin-left: 15px;">
+          <%= form.text_field :email, placeholder: "Email *" %>
+        </div>
+
+        <div class="field">
+          <%= form.text_field :phone, placeholder: "Telefone" %>
+        </div>
+
+        <div class="field" style="margin-left: 15px;">
+          <%= form.text_field :company, placeholder: "Empresa" %>
+        </div>
+        
+        <div class="field">
+          <%= form.text_area :content, placeholder: "Mensagem *" %>
+        </div>
+      </fieldset>
+      
+      <fieldset class="actions">
+        <%= form.submit "Enviar" %>
+      </fieldset>
+    <% end %>
+
+  </div>
+
+  <div class="row" style="padding-top: 0px">
+    <p>Venha conhecer nosso trabalho, faça-nos uma visita no endereço abaixo</p>
+    <p>Av. Getúlio Vargas, 673 - Bucarein - Joinville/SC - Fone: (47) 3032-0200</p>
+
+    <div style="border:1px solid #aeaeae">
+      <iframe width="958px" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=pt&amp;geocode=&amp;q=Av.+Get%C3%BAlio+Vargas,+673,+Joinville+-+Santa+Catarina,+Brasil&amp;aq=0&amp;oq=av.+Get%C3%BAlio+Vargas,+673&amp;sll=46.55886,-95.712891&amp;sspn=34.355178,83.847656&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Get%C3%BAlio+Vargas,+673+-+Anita+Garibaldi,+Joinville+-+Santa+Catarina,+89202-205,+Brasil&amp;t=m&amp;z=14&amp;ll=-26.313589,-48.845368&amp;output=embed"></iframe>
+    </div>
+
+</secion>

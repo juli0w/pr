@@ -1,0 +1,28 @@
+<section class="container products">
+
+  <% @lines.each do |line| %>
+    <% style = cycle('left', 'right') %>
+    <a href="<%= line_path(line) %>">
+      <div class="row linhas">
+        <div class="description <%= style %>">
+          <h2><%= line.name %></h2>
+          <h3><%= line.title %></h3>
+          <p><%= line.description %></p>
+        </div>
+
+        <span class="img <%= style == 'right' ? 'left' : 'right' %>" 
+              style="background: url('<%= line.image %>')
+                        no-repeat
+                        center
+                        <%= style == 'right' ? 'left' : 'right' %>;
+                     display: block;">
+          <div style="display: block;" class="img linha-<%= style %>"></div>
+        </span>
+      </div>
+    </a>
+
+  <% end %>
+
+  <br />
+
+</section>

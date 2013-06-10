@@ -1,0 +1,22 @@
+<div class="linha-title title-style-1 center">
+  <span class="centered"><%= @product.name %></span>
+</div>
+
+<p class='description'>
+  <%= @product.description %>
+</p>
+
+<div class="product-images">
+  <% @product.product_images.each do |image| %>
+    <div class="product-addon">
+      <div class="product-image">
+        <a href="<%= image.image %>" class="fancybox">
+          <img border=0 src="<%= image.image_url(:thumb).to_s %>" width="155px" height="120px" />
+        </a>
+      </div>
+      <div class="image-description">
+        <%= image.description %>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,58 @@
+.newsletter .row { margin-bottom: 3px; }
+
+.newsletter .linhas .right { float: right; }
+.newsletter .linhas .left  { float: left; }
+
+
+.newsletter .linhas .description {
+  width: 410px;
+  padding: 20px 30px;
+}
+
+.newsletter a {
+  color: inherit;
+}
+
+.newsletter a:hover {
+  color: #5b5b63;
+}
+
+.newsletter .linhas .img {
+  height: 240px;
+  width: 490px;
+  background-size: 100% 100% !important;
+}
+
+.newsletter .linhas .description h2 {
+  color: #a58747;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.newsletter .linhas .description h3 {
+  color: #5b5b63;
+  font-size: 15px;
+}
+
+.newsletter .linhas .description p {
+  text-align: justify;
+}
+
+img {
+  line-height: 0 !important;
+  font-size: 0 !important;
+  vertical-align: bottom !important;
+}
+
+.newsletter-fade {
+  background-color: #D0C5B1;
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QwYzViMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left,  rgba(208,197,177,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(208,197,177,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(208,197,177,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(208,197,177,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(208,197,177,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(208,197,177,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0c5b1', endColorstr='#00ffffff',GradientType=1 ); /* IE6-8 */
+}
