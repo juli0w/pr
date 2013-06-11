@@ -3,9 +3,11 @@
 .newsletter .linhas .right { float: right; }
 .newsletter .linhas .left  { float: left; }
 
-
-.newsletter .linhas .description {
+.newsletter .fix-height { height: 190px; }
+.newsletter .linhas .description.left {
   width: 410px;
+}
+.newsletter .linhas .description {
   padding: 20px 30px;
 }
 
@@ -23,18 +25,18 @@
   background-size: 100% 100% !important;
 }
 
-.newsletter .linhas .description h2 {
+.newsletter h2 {
   color: #a58747;
   font-size: 18px;
   margin-bottom: 0;
 }
 
-.newsletter .linhas .description h3 {
+.newsletter h3 {
   color: #5b5b63;
   font-size: 15px;
 }
 
-.newsletter .linhas .description p {
+.newsletter p {
   text-align: justify;
 }
 

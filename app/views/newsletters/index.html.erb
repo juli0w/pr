@@ -1,11 +1,11 @@
-<section class="container newsletter">
+<section class="container newsletter bt17">
 
   <% @newsletters.each do |newsletter| %>
 
     <div class="newsletter">
     
       <div class="row linhas">
-        <div class="description left" <%= "style='width: auto !important;'".html_safe if newsletter.image.blank? %>>
+        <div class="description left fix-height" <%= "style='width: auto !important;'".html_safe if newsletter.image.blank? %>>
           <h2><%= link_to newsletter.title, newsletter %></h2>
           <h3><%= newsletter.published_at %></h3>
           <p><%= newsletter.content %></p>
@@ -30,6 +30,4 @@
     <%= paginate(@newsletters) %>
   </div>
   
-  <br />
-
 </section>

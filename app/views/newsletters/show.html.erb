@@ -1,0 +1,21 @@
+<section class="container newsletter bt17">
+
+  <div class="newsletter">
+  
+    <div class="row">
+      <div class="fix-height" <%= "style='width: auto !important;'".html_safe if @newsletter.image.blank? %>>
+        <h2><%= link_to @newsletter.title, @newsletter %></h2>
+        <h3><%= @newsletter.published_at %></h3>
+        <p><%= @newsletter.content %></p>
+      </div>
+
+      <div class="text-align: center !important; width: 100%;">
+        <a href="<%= @newsletter.image %>" class="fancybox">
+          <%= image_tag(@newsletter.image, width: "200px", height: "200px") unless @newsletter.image.blank? %>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+
+</section>
