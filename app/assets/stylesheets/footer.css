@@ -1,5 +1,9 @@
-.footer {
-  margin-bottom: 0;
+.footerz {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
 }
 
 .footer-menu {
@@ -20,6 +24,10 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 15px;
+}
+
+.footer-margin {
+  padding-bottom: 355px !important;
 }
 
 .submenu a:hover { color: #a58747; }

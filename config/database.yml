@@ -1,6 +1,6 @@
 development:
   adapter: mysql2
-  database: promacal_development
+  database: expresso_rasante_development
   username: clients
   password: clients123
 test:
@@ -11,6 +11,6 @@ test:
 
 production:
   adapter: mysql2
-  database: promacal_production
+  database: expresso_rasante_development
   username: clients
   password: clients123

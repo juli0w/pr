@@ -11,6 +11,9 @@ body {
   background: linear-gradient(to right,  rgba(208,197,177,1) 0%,rgba(208,197,177,0.3) 21%,rgba(208,197,177,0.1) 50%,rgba(208,197,177,0.3) 79%,rgba(208,197,177,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0c5b1', endColorstr='#d0c5b1',GradientType=1 ); /* IE6-8 */
 }
+html, body {
+  height: 100%;
+}
 
 .border-top {
   border-top: 2px solid #dedede;
@@ -81,7 +84,7 @@ body {
 }
 
 .gold-line {
-  margin: 15px 0;
+  margin-top: 15px;
   border: 2px solid #a58747;
 }
 
@@ -143,9 +146,17 @@ body {
   font-weight: bold;
   margin-left: 4px;
 }
-.header {
+.headerz {
   background: url(header.jpg) no-repeat;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+}
+
+.body {
+  margin-top: 15px;
+}
+
+.line {
+  margin-top: 15px;
 }
 
 .logo {float:left;}
@@ -182,7 +193,7 @@ body {
   color: #a58747;
 }
 
-.header header .logo h1#logo {
+.headerz header .logo h1#logo {
   text-indent: -9999px;
   display: block;
   width: 363px;
@@ -194,6 +205,8 @@ body {
 
 .page {
   min-width: 980px;
+  min-height: 100%;
+  position: relative;
 }
 
 hr.hr {
