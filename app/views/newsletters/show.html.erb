@@ -8,8 +8,9 @@
         <h3><%= @newsletter.published_at %></h3>
         <p><%= @newsletter.content %></p>
       </div>
-
-      <div class="clearfix" style="text-align: center !important; width: 100%;">
+    </div>
+    <div class="row">
+      <div style="text-align: center !important; width: 100%;">
         <a href="<%= @newsletter.image %>" class="fancybox">
           <%= image_tag(@newsletter.image, width: "200px", height: "200px") unless @newsletter.image.blank? %>
         </a>
