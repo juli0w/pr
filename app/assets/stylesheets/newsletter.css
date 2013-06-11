@@ -3,7 +3,7 @@
 .newsletter .linhas .right { float: right; }
 .newsletter .linhas .left  { float: left; }
 
-.newsletter .fix-height { height: 190px; }
+.newsletter .fix-height { height: 190px; overflow: hidden; }
 .newsletter .linhas .description.left {
   width: 410px;
 }
