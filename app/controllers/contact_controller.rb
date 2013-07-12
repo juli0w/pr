@@ -11,8 +11,19 @@ class ContactController < ApplicationController
       NotificationsMailer.contact(@message).deliver
       redirect_to contato_path, notice: "Mensagem enviada!"
     else
-      flash.now.alert = "Preencha os campos corretamente! #{@message.errors.inspect}"
+      flash.now.alert = "Preencha os campos corretamente!"
       render :new
+    end
+  end
+
+  def exclusive
+    @message = Message.new(params[:message])
+
+    if @message.valid?
+      NotificationsMailer.exclusive_contact(@message).deliver
+      redirect_to exclusive_path, notice: "Mensagem enviada!"
+    else
+      redirect_to exclusive_path, alert: "Preencha os campos corretamente!"
     end
   end
 end

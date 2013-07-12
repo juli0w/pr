@@ -7,5 +7,7 @@ class Category < ActiveRecord::Base
   belongs_to :line
   has_many :products
 
+  validates :line_id, :name, presence: true
+
   mount_uploader :image, ImageUploader
 end

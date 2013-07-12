@@ -3,7 +3,7 @@ class Message
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :phone, :company, :email, :content
+  attr_accessor :name, :phone, :company, :email, :content, :address
 
   validates :name, :email, :content, presence: true
   validates :email, format: { with: %r{.+@.+\..+} }

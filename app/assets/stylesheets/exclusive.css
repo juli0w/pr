@@ -1,0 +1,29 @@
+.exclusive span {
+  width: 209px;
+}
+
+.contats span {
+  width: 89px;
+}
+
+.line-bottom-exclusive {
+  border-bottom: 1px solid #aeaeae;
+}
+
+a.exclusive-product-item {
+  display: inline-block;
+  width: 316px;
+  line-height: 42px;
+  background-color: black;
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  text-align: center;
+}
+
+a.exclusive-product-item:hover {
+  background-color: #A58747;
+  color: #000000 !important;
+}

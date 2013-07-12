@@ -1,6 +1,8 @@
 ---
 blank.gif: blank-2ebbd7cb21c3980daa0bddcc9c7ce5fc.gif
 blank/index.gif: blank-2ebbd7cb21c3980daa0bddcc9c7ce5fc.gif
+botao_exclusive.jpg: botao_exclusive-aab023295d43c253d1c703084408cc8d.jpg
+botao_exclusive/index.jpg: botao_exclusive-aab023295d43c253d1c703084408cc8d.jpg
 exclusive.jpg: exclusive-dca54510e4daee39b9138a6f394d0e99.jpg
 exclusive/index.jpg: exclusive-dca54510e4daee39b9138a6f394d0e99.jpg
 face_black.jpg: face_black-548547af9e95118178976fa94301f578.jpg
@@ -19,6 +21,8 @@ loading.gif: loading-f945de6fe903c123c388805bc9fbf257.gif
 loading/index.gif: loading-f945de6fe903c123c388805bc9fbf257.gif
 logo.png: logo-b4bc314f5df687658f26da4d2448b73a.png
 logo/index.png: logo-b4bc314f5df687658f26da4d2448b73a.png
+produtos_exclusive.jpg: produtos_exclusive-90fbfdef1f7acf325ac8f4cba061ec35.jpg
+produtos_exclusive/index.jpg: produtos_exclusive-90fbfdef1f7acf325ac8f4cba061ec35.jpg
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 select.png: select-b379634d86da28454ccf1b0269382587.png
@@ -27,12 +31,12 @@ sublogo.png: sublogo-9880dd345bf194f82ad5e32cf8818c8d.png
 sublogo/index.png: sublogo-9880dd345bf194f82ad5e32cf8818c8d.png
 active_admin.js: active_admin-15e149bd4566a2318012da476befd659.js
 active_admin/index.js: active_admin-15e149bd4566a2318012da476befd659.js
-application.js: application-d01225a50db8ef45f8f357d193ff7eb1.js
-application/index.js: application-d01225a50db8ef45f8f357d193ff7eb1.js
+application.js: application-8514d0bac221e3f0522a511c59ed6610.js
+application/index.js: application-8514d0bac221e3f0522a511c59ed6610.js
 active_admin.css: active_admin-60cf8e1029b716dcb1516591573f3143.css
 active_admin/index.css: active_admin-60cf8e1029b716dcb1516591573f3143.css
-application.css: application-f5cba94348c2760e2dd3bd30b1e92fec.css
-application/index.css: application-f5cba94348c2760e2dd3bd30b1e92fec.css
+application.css: application-b1f6880df0c0f9a2b08761789539c928.css
+application/index.css: application-b1f6880df0c0f9a2b08761789539c928.css
 active_admin/admin_notes_icon.png: active_admin/admin_notes_icon-25b05cd8197f7a271d0624853a6dbdd5.png
 active_admin/admin_notes_icon/index.png: active_admin/admin_notes_icon-25b05cd8197f7a271d0624853a6dbdd5.png
 active_admin/datepicker/datepicker-header-bg.png: active_admin/datepicker/datepicker-header-bg-6f0baad739953cb1a0413c031841e82f.png

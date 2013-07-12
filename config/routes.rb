@@ -16,6 +16,10 @@ Promacal::Application.routes.draw do
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'exclusive_contact' => 'contact#exclusive', :as => 'exclusive_contact', :via => :post
 
   root to: 'home#index'
+
+  get "/exclusive/products", to: "exclusive#products"
+  resources :exclusive_products
 end

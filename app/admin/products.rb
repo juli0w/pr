@@ -27,8 +27,9 @@ ActiveAdmin.register Product do
       f.input :description
 
       f.has_many :product_images do |j|
-          j.input :image
-          j.input :description
+        j.input :image
+        j.input :description
+        j.input :_destroy, :as => :boolean, :label => "remover"
       end
     end
     f.buttons

@@ -1,0 +1,6 @@
+<div>
+<% @exclusive_products.each do |n| %>
+  <%= link_to n.name, n, remote: true, class: 'exclusive-product-item' %>
+<% end %>
+</div>
+<div class="exclusive-product" style="margin-bottom: 20px;"></div>

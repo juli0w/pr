@@ -1,0 +1,10 @@
+<p style="margin-top: 20px">
+  <%= @exclusive_product.description %>
+</p>
+<p>
+  <% if @exclusive_product.product_images.any? %>
+    <% @exclusive_product.product_images.each do |image| %>
+      <%= link_to image_tag(image.image, width: 316, height: 280, style: "background-color: #000000; margin-top: 5px; display: inline-block;"), "#{image.image}", class: "fancybox" %>
+    <% end %>
+  <% end %>
+</p>

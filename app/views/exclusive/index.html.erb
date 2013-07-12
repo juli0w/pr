@@ -1,9 +1,76 @@
-<section class="container main">
+<section class="container exclusive">
+  <div class="row" style="margin-bottom: 3px;">
+    <%= image_tag "exclusive.jpg", width: "958px" %>
+  </div>
 
-  <div class="row" style="padding: 20px">
-    <center>
-      <h5>Em construção, aguarde!</h5>
-    </center>
+  <div class="row" style="padding-bottom: 0; margin-bottom: 0;">
+    <div class="eight columns alpha">
+      <%= link_to image_tag("produtos_exclusive.jpg", width: "478px", style: "display: block"), exclusive_products_path, remote: true %>
+    </div>
+    <div class="eight columns omega">
+      <a href="https://www.facebook.com/Promacalexclusive?hc_location=timeline">
+        <%= image_tag "face_black.jpg", style: "display: block; height: 227px" %>
+      </a>
+    </div>
+  </div>
+
+  <div id="product-show"></div>
+
+  <div id="product-contact" class="contato" style="margin-top: 20px;">
+    <div class="row">
+      <div class="title exclusive line-bottom-exclusive center" style="margin-bottom: 30px !important">
+        <span class="centered">
+          Promacal Exclusive
+        </span>
+      </div>
+
+      <p style="text-align: justify;">
+        Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double.
+      </p>
+      <p style="text-align: justify;">
+        Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double. Lorem ipsum, lorem ipsum ipsum double.
+      </p>
+    </div>
+    <div class="row">
+      <div class="title contats line-bottom-exclusive center" style="margin-bottom: 30px !important">
+        <span class="centered">
+          Contato
+        </span>
+      </div>
+
+      <%= form_for @message, :url => exclusive_contact_path, method: :post do |form| %>
+        <fieldset class="fields" style="padding-bottom: 0; margin-bottom: 0;">
+          <div class="field">
+            <%= form.text_field :name, placeholder: "Nome *" %>
+          </div>
+          
+          <div class="field" style="margin-left: 15px;">
+            <%= form.text_field :email, placeholder: "Email *" %>
+          </div>
+
+          <div class="field">
+            <%= form.text_field :phone, placeholder: "Telefone" %>
+          </div>
+
+          <div class="field" style="margin-left: 15px;">
+            <%= form.text_field :company, placeholder: "Empresa" %>
+          </div>
+
+          <div class="field address-field">
+            <%= form.text_field :address, placeholder: "Endereço" %>
+          </div>
+          
+          <div class="field">
+            <%= form.text_area :content, placeholder: "Mensagem *" %>
+          </div>
+        </fieldset>
+        
+        <fieldset class="actions" style="margin-bottom: 0; padding-bottom: 0;">
+          <%= form.submit "Enviar", style: "margin-bottom: 0;" %>
+        </fieldset>
+      <% end %>
+
+    </div>
   </div>
 
 </section>

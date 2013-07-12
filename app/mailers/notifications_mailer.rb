@@ -6,4 +6,9 @@ class NotificationsMailer < ActionMailer::Base
     @message = message
     mail(subject: "Promacal - Contato")
   end
+
+  def exclusive_contact(message)
+    @message = message
+    mail(subject: "Promacal Exclusive - Contato", to: "exclusive@promacal.com.br")
+  end
 end
