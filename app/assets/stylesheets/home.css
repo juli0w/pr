@@ -162,7 +162,9 @@ html, body {
 .line {
   margin-top: 15px;
 }
-
+.fdbg {
+  background: url(fdbg.jpg) no-repeat center;
+}
 .logo {float:left;}
 .sublogo { margin-top: 20px; float:right;}
 .navbar {
